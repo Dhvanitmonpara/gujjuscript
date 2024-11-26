@@ -284,7 +284,3 @@ console.log(sum);
 **GujjuScript** is a simple, beginner-friendly programming language designed to help users learn about the process of creating a programming language from scratch. Through the lexer, parser, and code generation process, users can explore key concepts such as tokenization, abstract syntax trees (ASTs), and how programming languages are interpreted and executed.
 
 With its easy-to-understand syntax and the possibility of extending functionality, **GujjuScript** is a great learning tool for anyone interested in programming languages or compilers.
-
-Feel free to modify, improve, or extend **GujjuScript** to suit your needs. Happy coding! 🎉
-
----
