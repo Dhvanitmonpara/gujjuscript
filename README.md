@@ -8,29 +8,51 @@ GujjuScript is a simple, fun, and easy-to-understand programming language design
 
 To set up **GujjuScript** on your machine, follow these steps:
 
-### **1. Clone or Download**
-
-First, clone the repository or download the files for **GujjuScript**.
-
-### **2. Install Dependencies**
+### **1. Install Node.js**
 
 Ensure you have **Node.js** installed on your system. If not, download and install it from the [official website](https://nodejs.org/).
 
-Then, navigate to the directory containing `gujjuScript.js` and run:
+### **2. Install GujjuScript**
+
+You can install **GujjuScript** globally on your machine via **npm**. Run the following command in your terminal:
 
 ```bash
-npm install
+npm install -g gujjuscript
 ```
 
-### **3. Install Globally**
+This will allow you to run **GujjuScript** from anywhere on your system using the `gujju` command.
 
-To use **GujjuScript** globally on your system, you can install it with the following command:
+### **3. Verify Installation**
+
+After installation, verify that **GujjuScript** was successfully installed by running the following command:
 
 ```bash
-npm install -g .
+gujju --version
 ```
 
-Once installed, you can run **GujjuScript** from any location using the `gujju` command.
+This should output the installed version of **GujjuScript**.
+
+---
+
+Now, you're ready to use **GujjuScript** on your machine! You can start running **GujjuScript** files or enter the REPL mode.
+
+To run a **GujjuScript** file:
+
+```bash
+gujju index.gjs
+```
+
+To start an interactive **GujjuScript** REPL:
+
+```bash
+gujju
+```
+
+To run a file with debugging enabled:
+
+```bash
+gujju index.gjs -debug
+```
 
 ---
 
