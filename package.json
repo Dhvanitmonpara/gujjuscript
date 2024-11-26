@@ -1,0 +1,15 @@
+{
+  "name": "gujjuscript",
+  "version": "1.0.0",
+  "description": "A simple programming language implementation",
+  "main": "gjs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "gujju": "./gjs.js"
+  },
+  "keywords": [],
+  "author": "Dhvanit Monpara",
+  "license": "MIT"
+}
