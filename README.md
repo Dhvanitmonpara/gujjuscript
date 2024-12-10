@@ -51,7 +51,7 @@ gujju
 To run a file with debugging enabled:
 
 ```bash
-gujju index.gjs -debug
+gujju index.gjs --gjs-debug
 ```
 
 ---
@@ -185,10 +185,10 @@ This will compile and execute the file `index.gjs`.
 
 ### **Debugging**
 
-To enable debugging while running a script, use the `-debug` flag:
+To enable debugging while running a script, use the `--gjs-debug` flag:
 
 ```bash
-gujju index.gjs -debug
+gujju index.gjs --gjs-debug
 ```
 
 This will output additional information such as the tokenized code, AST, and generated JavaScript code, which can be useful for debugging your code.

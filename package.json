@@ -1,6 +1,6 @@
 {
   "name": "gujjuscript",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A simple programming language implementation",
   "main": "gjs.js",
   "type": "module",
