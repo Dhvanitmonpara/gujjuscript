@@ -27,7 +27,7 @@ function main() {
 
     // Show version if '--version' flag is provided
     if (showVersion) {
-        console.log("GujjuScript version 1.0.0");
+        console.log("GujjuScript version 1.0.5");
         return;
     }
 

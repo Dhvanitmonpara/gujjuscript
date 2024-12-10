@@ -1,19 +1,15 @@
 {
   "name": "gujjuscript",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "A simple programming language implementation",
   "main": "gjs.js",
   "type": "module",
-  "scripts": {
-    "install": "npm install -g gujjuscript"
-  },
+  "scripts": {},
   "bin": {
     "gujju": "./gjs.js"
   },
-  "keywords": [],
+  "keywords": ["programming-language", "gujarati", "fun-project"],
   "author": "Dhvanit Monpara",
   "license": "MIT",
-  "dependencies": {
-    "gujjuscript": "^1.0.1"
-  }
+  "dependencies": {}
 }
