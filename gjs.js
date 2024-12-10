@@ -5,7 +5,7 @@ import runRepl from "./gjs/runRepl.js"
 function main() {
     const args = process.argv.slice(2);
 
-    let debug = {status: false};
+    let debug = { status: false, processing: false, errors: false, whitespace: false };
     let fileName = null;
     let showVersion = false;
     let showHelp = false;
@@ -13,10 +13,10 @@ function main() {
     // Parse arguments
     args.forEach((arg) => {
         if (arg === '--gjs-debug') {
-            debug = {status: true, processing: true, errors: true, whitespace: false};
-        } else if(arg === '--gjs-debug-ws') {
-            debug = {status: true, processing: true, errors: true, whitespace: true};
-        }else if (arg === '--version') {
+            debug = { status: true, processing: true, errors: true, whitespace: false };
+        } else if (arg === '--gjs-debug-ws') {
+            debug = { status: true, processing: true, errors: true, whitespace: true };
+        } else if (arg === '--version') {
             showVersion = true;
         } else if (arg === '--help') {
             showHelp = true;
@@ -27,7 +27,7 @@ function main() {
 
     // Show version if '--version' flag is provided
     if (showVersion) {
-        console.log("GujjuScript version 1.0.5");
+        console.log("GujjuScript version 1.0.6");
         return;
     }
 
@@ -37,9 +37,10 @@ function main() {
 Usage: gujju [options] [file]
 
 Options:
-  -debug        Enable debugging mode
-  --version     Show version information
-  --help        Show this help message
+  --debug-gjs      Enable debugging mode for gujjuScript
+  --debug-gjs-ws   Enable debugging mode for gujjuScript with whitespace count
+  --version        Show version information
+  --help           Show this help message
 
 If no file is provided, the REPL will start.
         `);
@@ -47,7 +48,7 @@ If no file is provided, the REPL will start.
     }
 
     // Enable debugging if '-debug' flag is present
-    if (debug) {
+    if (debug.status) {
         console.log("Debugging mode activated.");
     }
 
